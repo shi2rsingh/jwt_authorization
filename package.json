@@ -1,0 +1,19 @@
+{
+  "name": "jwt_authorization",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:auth": "nodemon authServer.js",
+    "start:s1": "nodemon server.js",
+    "start:s2": "nodemon second_server.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

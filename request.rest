@@ -1,0 +1,27 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hpc2hpciBTaW5naCIsImlhdCI6MTYyOTM4NDI5MiwiZXhwIjoxNjI5Mzg0MzIyfQ.zSSQOmS8k_qkc8Osj4ZgFAR6scfarXUvbcl073AWnjc
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "Shishir Singh"
+}
+
+###
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hpc2hpciBTaW5naCIsImlhdCI6MTYyOTM4NDM1OX0.JJFmR3wR9HTpKGcZAAVOtrurYW5Ptp2Ud3qtc1tUmr8"
+}
+
+###
+
+DELETE http://localhost:5000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hpc2hpciBTaW5naCIsImlhdCI6MTYyOTM4NDM1OX0.JJFmR3wR9HTpKGcZAAVOtrurYW5Ptp2Ud3qtc1tUmr8"
+}
